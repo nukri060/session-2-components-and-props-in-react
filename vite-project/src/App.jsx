@@ -4,6 +4,7 @@ import { HeroSection } from "./components/HeroSection";
 import { Feature } from "./components/Feature";
 import { Post } from "./components/Post";
 import { Testimonial } from "./components/Testimonial";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
   return (
@@ -72,18 +73,14 @@ function App() {
         </section>
 
         {/* Sidebar/About */}
-        <aside className="sidebar">
-          <h2>About DevConnect</h2>
-          <img
-            src="https://avatars.githubusercontent.com/u/98865593?s=280&v=4"
-            alt="DevConnect Logo"
-          />
-          <p>We are a global platform built for developers, by developers.</p>
-          <p>
-            Join our mission to make tech education and networking accessible to
-            everyone.
-          </p>
-        </aside>
+        <Sidebar
+          logo_src="https://avatars.githubusercontent.com/u/98865593?s=280&v=4"
+          logo_alt="DevConnect Logo"
+          side_title="About DevConnect"
+          side_subtitle="We are a global platform built for developers, by developers."
+          side_text="Join our mission to make tech education and networking accessible to everyone."
+        />
+
       </main>
 
       <footer>
