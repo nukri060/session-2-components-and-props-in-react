@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
 
 
 function App() {
@@ -10,11 +11,7 @@ function App() {
 
       <main>
         {/* Hero Section */}
-        <section className="hero">
-          <h2>Welcome to DevConnect</h2>
-          <p>The place where developers share, learn, and grow together.</p>
-          <button>Join Now</button>
-        </section>
+        <HeroSection/>
 
 
         {/* Features Section */}
