@@ -1,43 +1,38 @@
 import "./App.css";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import Feature from "./components/Feature";
 
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
 
 
       <main>
         {/* Hero Section */}
-        <HeroSection/>
+        <HeroSection />
 
 
         {/* Features Section */}
         <section className="features">
           <h2>Why Choose Us?</h2>
-          <div className="feature">
-            <h3>Community Driven</h3>
-            <p>
-              Get support, share tips, and build together with thousands of
-              developers.
-            </p>
-          </div>
-          <div className="feature">
-            <h3>Learning Resources</h3>
-            <p>
-              Access curated tutorials, challenges, and projects to boost your
-              skills.
-            </p>
-          </div>
-          <div className="feature">
-            <h3>Job Board</h3>
-            <p>
-              Explore developer jobs and freelance gigs tailored to your stack.
-            </p>
-          </div>
+
+          <Feature
+            title="Community Driven"
+            paragraph="Get support, share tips, and build together with thousands of developers."
+          />
+          <Feature
+            title="Learning Resources"
+            paragraph="Access curated tutorials, challenges, and projects to boost your skills."
+          />
+          <Feature
+            title="Job Board"
+            paragraph="Explore developer jobs and freelance gigs tailored to your stack."
+          />
         </section>
+
 
 
         {/* Blog Posts */}
