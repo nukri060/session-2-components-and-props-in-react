@@ -3,18 +3,16 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Feature from "./components/Feature";
 import Post from "./components/Post";
-
+import { Testimonial } from "./components/Testimonial";
 
 function App() {
   return (
     <div>
       <Header />
 
-
       <main>
         {/* Hero Section */}
         <HeroSection />
-
 
         {/* Features Section */}
         <section className="features">
@@ -33,8 +31,6 @@ function App() {
             paragraph="Explore developer jobs and freelance gigs tailored to your stack."
           />
         </section>
-
-
 
         {/* Blog Posts */}
         <section className="blog">
@@ -57,38 +53,23 @@ function App() {
           />
         </section>
 
-
-
         {/* Testimonials */}
         <section className="testimonials">
           <h2>What Developers Say</h2>
 
-
-          <div className="testimonial">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3541/3541871.png"
-              alt="User 1"
-            />
-            <blockquote>
-              "DevConnect helped me land my first remote React job!"
-            </blockquote>
-            <p>- Alex Frontend</p>
-          </div>
-
-
-          <div className="testimonial">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3541/3541871.png"
-              alt="User 2"
-            />
-            <blockquote>
-              "The tutorials and challenges here are better than most courses
-              I've paid for."
-            </blockquote>
-            <p>- Maria JS</p>
-          </div>
+          <Testimonial
+            src="https://cdn-icons-png.flaticon.com/512/3541/3541871.png"
+            alt="User 1"
+            quote="DevConnect helped me land my first remote React job!"
+            author="Alex Frontend"
+          />
+          <Testimonial
+            src="https://cdn-icons-png.flaticon.com/512/3541/3541871.png"
+            alt="User 2"
+            quote="The tutorials and challenges here are better than most courses I've paid for."
+            author="Maria JS"
+          />
         </section>
-
 
         {/* Sidebar/About */}
         <aside className="sidebar">
@@ -105,7 +86,6 @@ function App() {
         </aside>
       </main>
 
-
       <footer>
         <p>&copy; 2025 DevConnect. All rights reserved.</p>
         <nav>
@@ -117,8 +97,4 @@ function App() {
   );
 }
 
-
 export default App;
-
-
-
