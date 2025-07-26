@@ -1,4 +1,4 @@
-function Feature({ title, paragraph }) {
+export function Feature({ title, paragraph }) {
     return (
         <div className="feature">
             <h3>{title}</h3>
@@ -6,5 +6,3 @@ function Feature({ title, paragraph }) {
         </div>
     )
 }
-
-export default Feature;

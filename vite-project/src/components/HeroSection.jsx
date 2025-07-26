@@ -1,4 +1,4 @@
-function HeroSection() {
+export function HeroSection() {
     return (
         <section className="hero">
             <h2>Welcome to DevConnect</h2>
@@ -7,5 +7,3 @@ function HeroSection() {
         </section>
     )
 }
-
-export default HeroSection;

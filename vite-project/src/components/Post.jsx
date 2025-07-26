@@ -1,4 +1,4 @@
-function Post({ title, paragraph, author }) {
+export function Post({ title, paragraph, author }) {
     return (
         <article className="post">
             <h3>{title}</h3>
@@ -10,5 +10,3 @@ function Post({ title, paragraph, author }) {
         </article>
     )
 }
-
-export default Post;

@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import Feature from "./components/Feature";
-import Post from "./components/Post";
+import { Header } from "./components/Header";
+import { HeroSection } from "./components/HeroSection";
+import { Feature } from "./components/Feature";
+import { Post } from "./components/Post";
 import { Testimonial } from "./components/Testimonial";
 
 function App() {
