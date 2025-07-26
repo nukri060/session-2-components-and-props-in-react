@@ -5,6 +5,7 @@ import { Feature } from "./components/Feature";
 import { Post } from "./components/Post";
 import { Testimonial } from "./components/Testimonial";
 import { Sidebar } from "./components/Sidebar";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -83,13 +84,7 @@ function App() {
 
       </main>
 
-      <footer>
-        <p>&copy; 2025 DevConnect. All rights reserved.</p>
-        <nav>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
-        </nav>
-      </footer>
+      <Footer/>
     </div>
   );
 }
